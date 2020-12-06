@@ -5,7 +5,7 @@ class DayThree
     def input_data
       @input_data ||= begin
         data = []
-        File.open('challenge_inputs/day_three_inputs.txt').each_line do |l|
+        File.open('inputs/day_three.txt').each_line do |l|
           data << l.strip
         end
         data

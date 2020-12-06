@@ -6,7 +6,7 @@ class DayFour
     attr_reader :input_data
 
     def input_data
-      @input_data ||= File.read('challenge_inputs/day_four_input.txt').split("\n\n").map do |l|
+      @input_data ||= File.read('inputs/day_four.txt').split("\n\n").map do |l|
         l.gsub("\n", " ").strip.split(" ").each_with_object({}) do |i, h|
           field = i.split(":")
           h[field[0]] = field[1]

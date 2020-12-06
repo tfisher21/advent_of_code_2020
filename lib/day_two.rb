@@ -5,7 +5,7 @@ class DayTwo
     def password_data
       @password_data ||= begin
         data = []
-        File.open('challenge_inputs/day_two_inputs.txt').each_line do |l|
+        File.open('inputs/day_two.txt').each_line do |l|
           data << l.chomp.split(/\s/)
         end
         data
