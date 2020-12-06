@@ -3,7 +3,7 @@ class DayFive
 
   class << self
     def input_data
-      @input_data ||= File.read('challenge_inputs/day_five_input.txt').split("\n")
+      @input_data ||= File.read('inputs/day_five.txt').split("\n")
     end
 
     def part_one
